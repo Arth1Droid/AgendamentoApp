@@ -73,5 +73,10 @@ src/main/resources/application-prod.properties
 *.sqlite
 *.mv.db
 *.h2.db
-*.sql
 *.dump
+
+# Ignora todos os .sql
+*.sql
+
+# Exceto migrations do Flyway
+!src/main/resources/db/migration/*.sql
